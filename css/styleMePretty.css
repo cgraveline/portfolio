@@ -74,6 +74,10 @@ p {
   display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
   display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
 }
+.column {
+	-webkit-flex-direction: column;
+   flex-direction: column;
+}
 .center {
 	display: block;
 	width: 100%;
@@ -209,7 +213,7 @@ p {
 }
 
 
-#intro {
+.home {
 	width: 100%;
 	padding: 80px 0;
 	margin: 0;
