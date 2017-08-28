@@ -130,7 +130,25 @@ p {
 	}
 	.work-links {
 		line-height: 50px;
+		width: 50px;
+		height: 50px;
+	}
+}
 
+@media (max-height: 500px) {
+	.logo {
+		width: 80px;
+	}
+	h1 {
+		font-size: 2.2em;
+		line-height: 2em;
+	}
+	p {
+		font-size: 1.1em;
+		line-height: 1.2em;
+	}
+	.work-links {
+		line-height: 50px;
 		width: 50px;
 		height: 50px;
 	}
