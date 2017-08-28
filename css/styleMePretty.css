@@ -90,13 +90,13 @@ p {
 }
 .work-links-bg {
 	background-color: #9FFFDF;
-	position: absolute;
+	position: relative;;
 	display: block;
-	margin: 0 auto;
+	margin: -50px auto 0;
 	z-index: 0;
 	height: 50px;
 	max-width: 350px;
-	width: 360px;
+	width: 350px;
 	-webkit-transform: skew(-50deg, 2deg);
 	   -moz-transform: skew(-50deg, 2deg);
 	     -o-transform: skew(-50deg, 2deg);
