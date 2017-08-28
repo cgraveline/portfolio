@@ -94,6 +94,7 @@ p {
 	z-index: 0;
 	height: 50px;
 	max-width: 350px;
+	width: 360px;
 	-webkit-transform: skew(-50deg, 2deg);
 	   -moz-transform: skew(-50deg, 2deg);
 	     -o-transform: skew(-50deg, 2deg);
@@ -122,7 +123,13 @@ p {
 		line-height: 2em;
 	}
 	p {
-		font-size: 1.2em;
+		font-size: 1.1em;
 		line-height: 1.2em;
+	}
+	.work-links {
+		line-height: 50px;
+
+		width: 50px;
+		height: 50px;
 	}
 }
