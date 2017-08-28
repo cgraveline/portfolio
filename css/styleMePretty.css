@@ -91,6 +91,8 @@ p {
 .work-links-bg {
 	background-color: #9FFFDF;
 	position: absolute;
+	display: block;
+	margin: 0 auto;
 	z-index: 0;
 	height: 50px;
 	max-width: 350px;
