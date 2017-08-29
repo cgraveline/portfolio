@@ -147,6 +147,9 @@ p {
 		font-size: 1.1em;
 		line-height: 1.2em;
 	}
+	.work-links-bg {
+		overflow-x: hidden;
+	}
 	.work-links {
 		line-height: 50px;
 		width: 50px;
