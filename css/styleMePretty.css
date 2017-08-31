@@ -126,6 +126,9 @@ footer {
 }
 
 @media (max-height: 500px) {
+	.work-links {
+		margin-top: 10%;
+	}
 	.work-link {
 		line-height: 50px;
 		width: 50px;
