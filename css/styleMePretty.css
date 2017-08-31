@@ -76,7 +76,9 @@ footer {
 	align-self: flex-start;
 	margin-top: 5%;
 }
-
+.work-links {
+	margin-top: 20%;
+}
 .work-link {
 	z-index: 1000;
 	cursor: pointer;
@@ -117,9 +119,6 @@ footer {
 	}
 	.container {
 		padding: 30px;
-	}
-	footer {
-		height: 100px;
 	}
 	.contact-link {
 		font-size: .9em;
