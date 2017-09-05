@@ -5,12 +5,23 @@ body {
 	width: 100%;
 	height: 100vh;
 	margin: 0;
-	padding: 0;
+	padding: 15px;
+	background-color: black;
+}
+main {
+	height: 100vh;
+	justify-content: space-between;
 	background-color: white;
+	padding: 20px;
+}
+footer {
+	width: 100%;
+	height: 180px;
+	background: black;
 }
 
 h1 {
-	font-size: 2.4em;
+	font-size: 4vw;
 	margin: 0;
 	padding: 0;
 	color: black;
@@ -20,7 +31,8 @@ h1 {
 p {
 	margin-top: 0;
 	font-weight: 300;
-	font-size: 1.4em;
+	font-size: 2vw;
+	padding-left: 4px;
 	font-family: 'Helvetica', serif;
 	line-height: 1.6em;
 	text-align: left;
@@ -47,15 +59,7 @@ p {
 	justify-content: center;
 }
 
-main {
-	height: 85vh;
-	justify-content: space-between;
-}
-footer {
-	width: 100%;
-	height: 15vh;
-	background: black;
-}
+
 .contact-link {
 	color: white;
 	font-family: 'Futura', sans-serif;
@@ -68,6 +72,7 @@ footer {
 }
 .contact-link:hover,
 .contact-link:focus {
+	cursor: pointer;
 	text-decoration: none;
 	border: 2px solid white;
 }
@@ -77,7 +82,7 @@ footer {
 	margin-top: 5%;
 }
 .work-links {
-	margin-top: 10%;
+	margin-top: 20%;
 }
 .work-link {
 	z-index: 1000;
@@ -112,13 +117,15 @@ footer {
 		line-height: 1.2em;
 	}
 	.work-link {
-		line-height: 40px;
-		width: 40px;
-		height: 40px;
-		font-size: 1.2em;
+		line-height: 50px;
+		width: 50px;
+		height: 50px;
 	}
 	.container {
 		padding: 30px;
+	}
+	footer {
+		height: 140px;
 	}
 	.contact-link {
 		font-size: .9em;
@@ -126,7 +133,10 @@ footer {
 }
 
 @media (max-height: 500px) {
-	.work-links {
-		margin-top: 50px;
+	.work-link {
+		line-height: 50px;
+		width: 50px;
+		height: 50px;
 	}
+
 }
