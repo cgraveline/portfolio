@@ -1,0 +1,31 @@
+html {
+  height: 100%;
+  font-size: 16px;
+  background: black;
+  color: black;
+}
+body {
+  position: absolute;;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: cornsilk;
+  padding: 2em;
+  animation: fade-in ease .6s forwards;
+}
+main {
+  margin: 10% auto 0;
+  max-width: 30em;
+}
+.comment {
+  max-width: 30em;
+  width: 95%;
+  text-align: center;
+  margin: 10em auto 5em;
+  height: auto;
+  font: 300 .9em/1.4em monospace;
+  opacity: 0;
+  animation: fade-in-bottom ease .6s forwards;
+  animation-delay: .8s;
+}
