@@ -15,8 +15,10 @@ body {
   animation: fade-in ease .6s forwards;
 }
 main {
-  margin: 10% auto 0;
-  max-width: 30em;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
 }
 .comment {
   max-width: 30em;
