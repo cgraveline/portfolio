@@ -10,8 +10,7 @@ gulp.task('serve', function() {
     server: {
       baseDir: "./"
     },
-    port: 8000,
-    browser: 'firefox'
+    port: 8000
   });
 })
 
@@ -32,6 +31,6 @@ gulp.task('sass', function() {
 
 // run everything via "gulp"
 gulp.task('default', ['serve', 'sass'], function() {
-  gulp.watch('scss/**/*.scss', ['sass']);
+  gulp.watch('scss/**/*.scss', ['sass']).on('change', browserSync.reload);
   gulp.watch('*.html').on('change', browserSync.reload);
 });

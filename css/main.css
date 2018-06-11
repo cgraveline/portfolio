@@ -17,12 +17,10 @@ body {
   bottom: 0;
   right: 0;
   left: 0;
-  background: skyblue;
-  padding: 2em;
-  -webkit-animation: fade-in ease .6s forwards;
-  animation: fade-in ease .6s forwards; }
+  padding: 1em; }
 
 main {
+  background: skyblue;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -34,7 +32,10 @@ main {
   align-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  -webkit-animation: fade-in ease .6s forwards;
+  animation: fade-in ease .6s forwards;
+  padding: 2em; }
 
 .comment {
   max-width: 30em;
@@ -52,7 +53,7 @@ main {
 h1 {
   font-family: "Source Serif Pro", serif;
   color: black;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   padding: 0;
   opacity: 0;
   text-align: left;
@@ -68,7 +69,7 @@ p {
   font-size: 1.4em;
   text-align: left;
   color: #333;
-  margin: 0 0 0 1.7em;
+  margin: .3em;
   padding: 0;
   opacity: 0;
   text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.1);

@@ -10,15 +10,18 @@ body {
   bottom: 0;
   right: 0;
   left: 0;
-  background: skyblue;
-  padding: 2em;
-  animation: fade-in ease .6s forwards;
+  padding: 1em;
+
 }
 main {
+  background: skyblue;
   display: flex;
   flex-direction: column;
   align-content: center;
   align-items: center;
+  animation: fade-in ease .6s forwards;
+  padding: 2em;
+
 }
 .comment {
   max-width: 30em;
