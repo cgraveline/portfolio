@@ -1,36 +1,53 @@
 html {
   height: 100%;
-  @include fluid-type($min_width, $max_width, $min_font, $max_font);
-  background: black;
-  color: black;
-}
-body {
-  position: absolute;;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  padding: 1em;
-
+  background: #eff0eb;
+  background-size: cover;
+  font-size: 18px;
 }
 main {
-  background: skyblue;
+  height: 80vh;
   display: flex;
   flex-direction: column;
-  align-content: center;
   align-items: center;
-  animation: fade-in ease .6s forwards;
-  padding: 2em;
-
+  justify-content: center;
 }
-.comment {
-  max-width: 30em;
-  width: 95%;
+.content {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1.2rem;
+}
+.links {
+  position: absolute;
+  bottom: 4rem;
+  left: 0;
+  right: 0;
   text-align: center;
-  margin: 10em auto 5em;
-  height: auto;
-  font: 300 .9em/1.4em monospace;
-  opacity: 0;
-  animation: fade-in-bottom ease .6s forwards;
+  animation: fade-in-bottom ease .8s forwards;
   animation-delay: .8s;
+  opacity: 0;
+  .link {
+    color: $blue;
+    padding: 0 1rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: .3s;
+    &:hover,
+    &:focus {
+      text-decoration: none;
+      cursor: pointer;
+      color: darken($blue, 20%);
+    }
+  }
+}
+
+@media(min-width: 768px) {
+  .links .link {
+    font-size: 1.6em; 
+  }
+}
+
+@media(max-height: 350px) {
+  .links {
+    bottom: 3rem;
+  }
 }

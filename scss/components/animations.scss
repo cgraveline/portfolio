@@ -16,3 +16,12 @@
     transform: translateY(0);
   }
 }
+
+@keyframes blur {
+  from {
+    filter: blur(10px);
+  }
+  to {
+    filter: blur(0);
+  }
+}

@@ -1,31 +1,32 @@
 h1 {
-  font-family: $serif;
-  color: black;
-  margin-bottom: 8px;
+  font-family: $display;
+  color: $blue;
+  font-size: 2.4em;
+  font-weight: 900;
+  line-height: 120%;
   padding: 0;
+  margin-bottom: 1.5rem;
   opacity: 0;
-  text-align: left;
-  @include text-shadow;
+  text-align: center;
+  letter-spacing: 6px;
   animation: fade-in-bottom ease .8s forwards;
   animation-delay: .4s;
 }
 
-p {
+h2 {
   font-family: $sans-serif;
-  font-weight: 300;
-  font-size: 1.4em;
-  text-align: left;
-  color: #333;
-  margin: .3em;
-  padding: 0;
+  font-weight: 200;
+  font-size: 1.3rem;
+  letter-spacing: .5px;
+  line-height: 150%;
+  text-align: center;
+  color: $dark-sand;
+  margin: 0;
   opacity: 0;
-  @include text-shadow;
   animation: fade-in-bottom ease .8s forwards;
   animation-delay: .6s;
 }
-.text-center {
-  text-align: center;
-}
+
 
 // a {
 //   font-weight: 400;
@@ -42,14 +43,17 @@ p {
 //   }
 // }
 
-// @media(min-width: 370px) {
-//   html {
-//     font-size: 18px;
-//   }
-// }
+@media(min-width: 768px) {
+  h1 {
+    font-size: 3.4rem;
+  }
+  h2 {
+    font-size: 1.7rem;
+  }
+}
 
-// @media(min-width: 760px) {
-//   html {
-//     font-size: 22px;
-//   }
-// }
+@media(max-height: 350px) {
+  h1 {
+    margin-bottom: .5rem;
+  }
+}

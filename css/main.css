@@ -1,26 +1,11 @@
 html {
   height: 100%;
-  background: black;
-  color: black; }
-  html {
-    font-size: 14px; }
-    @media screen and (min-width: 320px) {
-      html {
-        font-size: calc(14px + 22 * ((100vw - 320px) / 880)); } }
-    @media screen and (min-width: 1200px) {
-      html {
-        font-size: 36px; } }
-
-body {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  padding: 1em; }
+  background: #eff0eb;
+  background-size: cover;
+  font-size: 18px; }
 
 main {
-  background: skyblue;
+  height: 80vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -28,58 +13,94 @@ main {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  -ms-flex-line-pack: center;
-  align-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-animation: fade-in ease .6s forwards;
-  animation: fade-in ease .6s forwards;
-  padding: 2em; }
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
 
-.comment {
-  max-width: 30em;
-  width: 95%;
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 0 1.2rem; }
+
+.links {
+  position: absolute;
+  bottom: 4rem;
+  left: 0;
+  right: 0;
   text-align: center;
-  margin: 10em auto 5em;
-  height: auto;
-  font: 300 .9em/1.4em monospace;
-  opacity: 0;
-  -webkit-animation: fade-in-bottom ease .6s forwards;
-  animation: fade-in-bottom ease .6s forwards;
+  -webkit-animation: fade-in-bottom ease .8s forwards;
+  animation: fade-in-bottom ease .8s forwards;
   -webkit-animation-delay: .8s;
-  animation-delay: .8s; }
+  animation-delay: .8s;
+  opacity: 0; }
+  .links .link {
+    color: #2E8AF6;
+    padding: 0 1rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    -webkit-transition: .3s;
+    transition: .3s; }
+    .links .link:hover, .links .link:focus {
+      text-decoration: none;
+      cursor: pointer;
+      color: #0858b6; }
+
+@media (min-width: 768px) {
+  .links .link {
+    font-size: 1.6em; } }
+
+@media (max-height: 350px) {
+  .links {
+    bottom: 3rem; } }
 
 h1 {
-  font-family: "Source Serif Pro", serif;
-  color: black;
-  margin-bottom: 8px;
+  font-family: "Lato", sans-serif;
+  color: #2E8AF6;
+  font-size: 2.4em;
+  font-weight: 900;
+  line-height: 120%;
   padding: 0;
+  margin-bottom: 1.5rem;
   opacity: 0;
-  text-align: left;
-  text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  letter-spacing: 6px;
   -webkit-animation: fade-in-bottom ease .8s forwards;
   animation: fade-in-bottom ease .8s forwards;
   -webkit-animation-delay: .4s;
   animation-delay: .4s; }
 
-p {
-  font-family: "Source Sans Pro", sans-serif;
-  font-weight: 300;
-  font-size: 1.4em;
-  text-align: left;
-  color: #333;
-  margin: .3em;
-  padding: 0;
+h2 {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 200;
+  font-size: 1.3rem;
+  letter-spacing: .5px;
+  line-height: 150%;
+  text-align: center;
+  color: #7A7B73;
+  margin: 0;
   opacity: 0;
-  text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.1);
   -webkit-animation: fade-in-bottom ease .8s forwards;
   animation: fade-in-bottom ease .8s forwards;
   -webkit-animation-delay: .6s;
   animation-delay: .6s; }
 
-.text-center {
-  text-align: center; }
+@media (min-width: 768px) {
+  h1 {
+    font-size: 3.4rem; }
+  h2 {
+    font-size: 1.7rem; } }
+
+@media (max-height: 350px) {
+  h1 {
+    margin-bottom: .5rem; } }
 
 @-webkit-keyframes fade-in {
   from {
@@ -112,3 +133,19 @@ p {
     opacity: 1;
     -webkit-transform: translateY(0);
     transform: translateY(0); } }
+
+@-webkit-keyframes blur {
+  from {
+    -webkit-filter: blur(10px);
+    filter: blur(10px); }
+  to {
+    -webkit-filter: blur(0);
+    filter: blur(0); } }
+
+@keyframes blur {
+  from {
+    -webkit-filter: blur(10px);
+    filter: blur(10px); }
+  to {
+    -webkit-filter: blur(0);
+    filter: blur(0); } }
