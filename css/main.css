@@ -5,7 +5,7 @@ html {
   font-size: 18px; }
 
 main {
-  height: 80vh;
+  height: 60vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -54,6 +54,8 @@ main {
       color: #0858b6; }
 
 @media (min-width: 768px) {
+  main {
+    height: 80vh; }
   .links .link {
     font-size: 1.6em; } }
 

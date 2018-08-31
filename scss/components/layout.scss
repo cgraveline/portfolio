@@ -5,7 +5,7 @@ html {
   font-size: 18px;
 }
 main {
-  height: 80vh;
+  height: 60vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -41,6 +41,9 @@ main {
 }
 
 @media(min-width: 768px) {
+  main {
+    height: 80vh;
+  }
   .links .link {
     font-size: 1.6em; 
   }
