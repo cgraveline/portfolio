@@ -1,38 +1,205 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Chris Graveline</title>
-  <meta name="description" content="Boston based designer and developer.">
+  <title>Chris Graveline — Senior Front-End Engineer &amp; Designer</title>
+  <meta name="description" content="Selected experience and past work from Chris Graveline, a Boston-based senior front-end engineer and designer.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="/favicon128.png">
-  <link rel="apple-touch-icon" href="apple-touch-icon-iphone.png" />
-  <link rel="apple-touch-icon" sizes="72x72" href="/favicon128.png" />
-  <link rel="apple-touch-icon" sizes="114x114" href="/favicon128.png" />
+  <link rel="apple-touch-icon" href="apple-touch-icon-iphone.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicon128.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicon128.png">
   <link rel="stylesheet" href="/css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,400|Lato:900" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 </head>
 <body>
+  <header class="site-header">
+    <a class="wordmark" href="/" aria-label="Chris Graveline, home">CG</a>
+    <nav aria-label="Main navigation">
+      <a href="#experience">Experience</a>
+      <a href="https://www.linkedin.com/in/chris-graveline-8320bab" target="_blank" rel="noopener noreferrer">Connect</a>
+    </nav>
+  </header>
+
   <main>
-    <div class="content">
-      <h1>Chris Graveline</h1>
-      <h2>Boston based designer &amp; developer.</h2>
-      <div class="links">
-        <a href="https://www.linkedin.com/in/chris-graveline-8320bab" class="link" title="Linkedin">
-          <i class="fab fa-linkedin"></i>
+    <section class="intro" aria-labelledby="intro-title">
+      <p class="eyebrow">Senior front-end engineer &amp; designer · Boston</p>
+      <h1 id="intro-title">Chris Graveline</h1>
+      <p class="intro-copy">I build thoughtful digital experiences, bringing design and engineering together to make the web work better.</p>
+      <button class="experience-toggle" type="button" aria-expanded="false" aria-controls="experience-content">
+        <span data-toggle-label>View my experience</span>
+        <span class="toggle-icon" aria-hidden="true">↓</span>
+      </button>
+      <div class="intro-links" id="connect" aria-label="Contact and social links">
+        <a href="https://www.linkedin.com/in/chris-graveline-8320bab" aria-label="LinkedIn">
+          <i class="fab fa-linkedin" aria-hidden="true"></i>
         </a>
-        <a href="https://github.com/cgraveline" class="link" title="Github">
-          <i class="fab fa-github"></i>
+        <a href="https://github.com/cgraveline" aria-label="GitHub">
+          <i class="fab fa-github" aria-hidden="true"></i>
         </a>
-        <a href="https://dribbble.com/cgraveline" class="link" title="Dribbble">
-          <i class="fab fa-dribbble"></i>
+        <a href="https://dribbble.com/cgraveline" aria-label="Dribbble">
+          <i class="fab fa-dribbble" aria-hidden="true"></i>
         </a>
-        <a href="https://codepen.io/cgraveline/" class="link" title="Codepen">
-          <i class="fab fa-codepen"></i>
+        <a href="https://codepen.io/cgraveline/" aria-label="CodePen">
+          <i class="fab fa-codepen" aria-hidden="true"></i>
         </a>
+      </div>
+    </section>
+
+    <div class="experience-reveal" id="experience-content">
+      <div class="experience-reveal-inner">
+        <section class="work-section" id="experience" aria-labelledby="experience-title">
+          <div class="section-heading">
+            <p class="eyebrow">Selected experience</p>
+            <h2 id="experience-title">From mission critical apps to marketing sites that make a first impression.</h2>
+            <p class="archive-note">Tiny disclaimer: some screenshots show my work; others just set the scene.</p>
+          </div>
+
+          <div class="work-grid">
+        <article class="work-card">
+          <div class="card-media card-media--split">
+            <figure>
+              <img src="/img/screenshots/computrition-mobile-floor-stock-live-2026-10-05.jpg" alt="Live Computrition Mobile Floor Stock Software page, showing its foodservice inventory interface, captured October 5, 2026." loading="lazy" width="1440" height="900">
+            </figure>
+            <figure>
+              <img src="/img/screenshots/computrition-nutrition-services-live-2026-10-05.jpg" alt="Live Computrition Hospital Nutrition Services Software page, showing its nutrition care product imagery, captured October 5, 2026." loading="lazy" width="1440" height="900">
+            </figure>
+          </div>
+          <div class="card-heading">
+            <h3>Computrition</h3>
+            <p class="role">Senior Front-End Engineer <span>· 2024–Present</span></p>
+          </div>
+          <p>Building nutrition based products: a new nutrition management and meal ordering experience with Lit and TypeScript Web Components, and InStock food inventory management with React and Fluent UI.</p>
+          <ul class="skills" aria-label="Technologies">
+            <li>Lit</li><li>Web Components</li><li>React</li><li>TypeScript</li><li>Fluent UI</li><li>SCSS</li><li>Vite</li><li>Playwright</li><li>.NET / C#</li>
+          </ul>
+          <div class="card-links">
+            <a href="https://www.computrition.com/" target="_blank" rel="noopener noreferrer">Company site <span aria-hidden="true">↗</span></a>
+            <a href="https://www.computrition.com/product-solutions/mobile-floor-stock-software/" target="_blank" rel="noopener noreferrer">Mobile Floor Stock Software <span aria-hidden="true">↗</span></a>
+            <a href="https://www.computrition.com/product-solutions/nutrition-services-software/" target="_blank" rel="noopener noreferrer">Nutrition Services Software <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+
+        <article class="work-card">
+          <div class="card-media card-media--split card-media--collage">
+            <figure>
+              <img src="/img/screenshots/transient-labs-dashboard.jpg" alt="Transient Labs dashboard interface with a project title, tabs, and a grid of NFT token cards." loading="lazy" width="1200" height="814">
+            </figure>
+            <figure>
+              <img src="/img/screenshots/transient-labs-mint-pages.jpg" alt="Two mobile views of a Transient Labs NFT artwork page and its token mint form." loading="lazy" width="1312" height="1125">
+            </figure>
+          </div>
+          <div class="card-heading">
+            <h3>Operating System</h3>
+            <p class="role">Front-End Engineer <span>· 2024</span></p>
+          </div>
+          <p>Brought newly designed Transient Labs features from design into production, building refined Web3 experiences with Next.js, React, TypeScript, Tailwind, and custom design system components.</p>
+          <ul class="skills" aria-label="Technologies">
+            <li>React</li><li>Next.js</li><li>TypeScript</li><li>Tailwind</li><li>Design Systems</li><li>Web3</li>
+          </ul>
+          <div class="card-links">
+            <a href="https://www.operatingsystem.io/" target="_blank" rel="noopener noreferrer">Operating System site <span aria-hidden="true">↗</span></a>
+            <a href="https://www.operatingsystem.io/project/transient-labs" target="_blank" rel="noopener noreferrer">Transient Labs project <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+
+        <article class="work-card">
+          <div class="card-media card-media--split">
+            <figure>
+              <img src="/img/screenshots/exprealty-middlesex-2024-05-07.jpg" alt="Archived eXp Realty Middlesex County, Massachusetts listings search with Mapbox basemap, map markers, and property cards; captured May 7, 2024, with missing map tiles restored." loading="lazy" width="900" height="562">
+            </figure>
+            <figure>
+              <img src="/img/screenshots/exprealty-boston-listing-2024-05-07.jpg" alt="Archived eXp Realty listing page for a Boston condo at 240 Devonshire Street, showing a bright kitchen photo, skyline gallery preview, and 41 listing photos; captured May 7, 2024." loading="lazy" width="900" height="633">
+            </figure>
+          </div>
+          <div class="card-heading">
+            <h3>eXp Realty listings search</h3>
+            <p class="role">Senior UI Engineer · Showcase IDX / eXp Realty <span>· 2021–2023</span></p>
+          </div>
+          <p>Redesigned eXp Realty’s property search from the map through listing details, then modernized its frontend from legacy React to Next.js with Mantine and Mapbox.</p>
+          <ul class="skills" aria-label="Technologies">
+            <li>React</li><li>Next.js</li><li>Mantine</li><li>Mapbox</li><li>Cypress</li>
+          </ul>
+          <div class="card-links">
+            <a href="https://www.exprealty.com/" target="_blank" rel="noopener noreferrer">eXp Realty site <span aria-hidden="true">↗</span></a>
+            <a href="https://showcaseidx.com/" target="_blank" rel="noopener noreferrer">Showcase IDX site <span aria-hidden="true">↗</span></a>
+            <a href="https://web.archive.org/web/20240507052146/https://exprealty.com/us/ma/middlesex-county/" target="_blank" rel="noopener noreferrer">Wayback Middlesex County listings · May 7, 2024 <span aria-hidden="true">↗</span></a>
+            <a href="https://web.archive.org/web/20240507052144/https://exprealty.com/properties/listing/mlspin/73233864/Boston/240-Devonshire-Street-5810/" target="_blank" rel="noopener noreferrer">Wayback Boston condo listing · May 7, 2024 <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+
+        <article class="work-card">
+          <div class="card-media card-media--split">
+            <figure>
+              <img src="/img/screenshots/gotomeeting-2019-06-01.jpg" alt="Archived GoToMeeting by LogMeIn marketing homepage, captured June 1, 2019." loading="lazy" width="900" height="562">
+            </figure>
+            <figure>
+              <img src="/img/screenshots/grasshopper-2019-05-22.jpg" alt="Archived Grasshopper virtual phone system homepage, a LogMeIn product, captured May 22, 2019." loading="lazy" width="900" height="562">
+            </figure>
+          </div>
+          <div class="card-heading">
+            <h3>LogMeIn</h3>
+            <p class="role">UI Engineer <span>· 2018–2021</span></p>
+          </div>
+          <p>Built customer facing marketing sites for LogMeIn products, including GoToMeeting related offerings and Grasshopper, using React and later Next.js with reusable component libraries.</p>
+          <ul class="skills" aria-label="Technologies">
+            <li>Sitecore</li><li>React</li><li>Next.js</li><li>Component Libraries</li>
+          </ul>
+          <div class="card-links">
+            <a href="https://www.logmein.com/" target="_blank" rel="noopener noreferrer">Company site <span aria-hidden="true">↗</span></a>
+            <a href="https://web.archive.org/web/20190601074018/https://www.gotomeeting.com/" target="_blank" rel="noopener noreferrer">GoToMeeting snapshot · Jun 1, 2019 <span aria-hidden="true">↗</span></a>
+            <a href="https://web.archive.org/web/20190522213345/https://grasshopper.com/" target="_blank" rel="noopener noreferrer">Grasshopper snapshot · May 22, 2019 <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+
+        <article class="work-card">
+          <div class="card-media card-media--single">
+            <img src="/img/screenshots/philips-informatics-marketing-page.jpg" alt="Screenshot of Philips’ diagnostic and clinical informatics marketing page, with a clinical team hero image and integrated diagnostics headline." loading="lazy" width="1440" height="900">
+          </div>
+          <div class="card-heading">
+            <h3>Philips</h3>
+            <p class="role">UI Engineer <span>· 2017–2018</span></p>
+          </div>
+          <p>Created a design system and developer documentation for Philips’ IoT API, giving developers a clear path to data collected from connected devices in the cloud.</p>
+          <ul class="skills" aria-label="Technologies">
+            <li>Design Systems</li><li>API Documentation</li><li>IoT</li>
+          </ul>
+          <div class="card-links">
+            <a href="https://www.philips.com/" target="_blank" rel="noopener noreferrer">Company site <span aria-hidden="true">↗</span></a>
+            <a href="https://www.usa.philips.com/healthcare/diagnostic-and-clinical-informatics" target="_blank" rel="noopener noreferrer">Diagnostic and clinical informatics page <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+
+        <article class="work-card">
+          <div class="card-media card-media--split">
+            <figure>
+              <img src="/img/screenshots/comsol-multiphysics-2016-02-20.jpg" alt="Archived COMSOL Multiphysics product page featuring the physics-based modeling and simulation platform, captured February 20, 2016." loading="lazy" width="1440" height="900">
+            </figure>
+            <figure>
+              <img src="/img/screenshots/comsol-products-2016-03-14.jpg" alt="Archived COMSOL Multiphysics Software Product Suite page showing the product catalog, captured March 14, 2016." loading="lazy" width="1440" height="900">
+            </figure>
+          </div>
+          <div class="card-heading">
+            <h3>COMSOL</h3>
+            <p class="role">UI Designer / Developer <span>· 2013–2017</span></p>
+          </div>
+          <p>Designed and built COMSOL’s public website, extending Bootstrap UI across its homegrown CMS and multilingual site experience.</p>
+          <ul class="skills" aria-label="Technologies">
+            <li>Bootstrap</li><li>CMS</li><li>Localization</li><li>UI Design</li>
+          </ul>
+          <div class="card-links">
+            <a href="https://www.comsol.com/" target="_blank" rel="noopener noreferrer">Company site <span aria-hidden="true">↗</span></a>
+            <a href="https://web.archive.org/web/20160220174928/http://www.comsol.com/comsol-multiphysics" target="_blank" rel="noopener noreferrer">Wayback COMSOL Multiphysics · Feb 20, 2016 <span aria-hidden="true">↗</span></a>
+            <a href="https://web.archive.org/web/20160314201733/http://www.comsol.com/products" target="_blank" rel="noopener noreferrer">Wayback product suite · Mar 14, 2016 <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+          </div>
+        </section>
       </div>
     </div>
   </main>
+
+  <script src="/js/main.js" defer></script>
 </body>
 </html>
