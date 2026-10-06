@@ -14,6 +14,22 @@ body {
   line-height: 1.6;
 }
 
+.skip-link {
+  position: absolute;
+  z-index: 10;
+  top: -3rem;
+  left: .75rem;
+  padding: .6rem .9rem;
+  border-radius: 4px;
+  background: #fff;
+  color: $blue-accessible;
+  font-weight: 700;
+
+  &:focus {
+    top: .75rem;
+  }
+}
+
 .site-header {
   width: min(100% - 3rem, 1120px);
   min-height: 5rem;
@@ -29,7 +45,7 @@ body {
 
   nav a,
   .wordmark {
-    color: $blue;
+    color: $blue-accessible;
     text-decoration: none;
   }
 
@@ -65,9 +81,9 @@ body {
   gap: .65rem;
   margin: 0 auto 1.7rem;
   padding: .7rem 1.1rem;
-  border: 1px solid $blue;
+  border: 1px solid $blue-accessible;
   border-radius: 999px;
-  background: $blue;
+  background: $blue-accessible;
   color: #fff;
   font: inherit;
   font-size: .9rem;
@@ -76,12 +92,12 @@ body {
 
   &:hover {
     transform: translateY(-2px);
-    border-color: color.adjust($blue, $lightness: -10%);
-    background: color.adjust($blue, $lightness: -10%);
+    border-color: color.adjust($blue-accessible, $lightness: -10%);
+    background: color.adjust($blue-accessible, $lightness: -10%);
   }
 
   &:focus-visible {
-    outline: 2px solid $blue;
+    outline: 2px solid $blue-accessible;
     outline-offset: 3px;
   }
 }
@@ -105,7 +121,7 @@ body {
   gap: 1.2rem;
 
   a {
-    color: $blue;
+    color: $blue-accessible;
     font-size: 1.3rem;
     text-decoration: none;
     transition: color .2s ease, transform .2s ease;
@@ -114,7 +130,7 @@ body {
   a:hover,
   a:focus-visible {
     transform: translateY(-2px);
-    color: color.adjust($blue, $lightness: -20%);
+    color: color.adjust($blue-accessible, $lightness: -20%);
   }
 }
 
@@ -146,7 +162,7 @@ body {
 
 .eyebrow {
   margin: 0 0 .65rem;
-  color: $blue;
+  color: $blue-accessible;
   font-size: .75rem;
   font-weight: 400;
   letter-spacing: .14em;
@@ -343,7 +359,7 @@ body {
 }
 
 .card-links a {
-  color: #176acb;
+  color: $blue-accessible;
   text-decoration: none;
 }
 
@@ -379,7 +395,7 @@ body {
 }
 
 .links .link {
-  color: $blue;
+  color: $blue-accessible;
   font-size: 1.3rem;
   text-decoration: none;
   transition: color .2s ease;
@@ -387,7 +403,7 @@ body {
 
 .links .link:hover,
 .links .link:focus-visible {
-  color: color.adjust($blue, $lightness: -20%);
+  color: color.adjust($blue-accessible, $lightness: -20%);
 }
 
 .copyright {
@@ -397,7 +413,7 @@ body {
 }
 
 a:focus-visible {
-  outline: 2px solid $blue;
+  outline: 2px solid $blue-accessible;
   outline-offset: 3px;
 }
 
@@ -422,6 +438,13 @@ a:focus-visible {
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
+  }
+
+  .has-experience-toggle .experience-reveal,
+  .experience-toggle,
+  .toggle-icon,
+  .intro-links a {
+    transition: none;
   }
 
   *,

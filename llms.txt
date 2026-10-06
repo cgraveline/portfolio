@@ -1,0 +1,24 @@
+# Chris Graveline
+
+> Boston-based senior front-end engineer and designer.
+
+Chris Graveline builds web applications, on-premises applications, and customer-facing marketing websites, combining front-end engineering and interface design.
+
+## Portfolio
+
+- [Selected experience](https://www.chrisgraveline.us/): Experience across healthcare software, Web3 creator tools, real estate search, product marketing sites, IoT developer tooling, and scientific software.
+- [LinkedIn](https://www.linkedin.com/in/chris-graveline-8320bab)
+- [GitHub](https://github.com/cgraveline)
+- [Dribbble](https://dribbble.com/cgraveline)
+- [CodePen](https://codepen.io/cgraveline/)
+
+## Experience
+
+- Computrition — Senior Front-End Engineer, 2024–present. Building nutrition based products: a new nutrition management and meal ordering experience with Lit and TypeScript Web Components, and InStock food inventory management with React and Fluent UI.
+- Operating System — Front-End Engineer, 2024. Implemented newly designed features for Transient Labs using Next.js, React, TypeScript, Tailwind, and custom design system components. [Project](https://www.operatingsystem.io/project/transient-labs)
+- Showcase IDX / eXp Realty — Senior UI Engineer, 2021–2023. Redesigned eXp Realty property search from map through listing details, then modernized its frontend from legacy React to Next.js with Mantine and Mapbox. [Middlesex County archived search](https://web.archive.org/web/20240507052146/https://exprealty.com/us/ma/middlesex-county/)
+- LogMeIn — UI Engineer, 2018–2021. Built customer facing marketing sites for GoToMeeting related products and Grasshopper using React, later Next.js, Sitecore, and reusable component libraries.
+- Philips — UI Engineer, 2017–2018. Created a design system and developer documentation for the Philips IoT API, exposing cloud collected data from connected devices.
+- COMSOL — UI Designer / Developer, 2013–2017. Designed and built the public website with Bootstrap UI, a homegrown CMS, and multilingual content.
+
+Some portfolio images show specific work; others provide project context.
